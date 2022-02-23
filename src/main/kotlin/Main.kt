@@ -1,3 +1,6 @@
+import java.lang.Math.sqrt
+import kotlin.math.pow
+
 fun main() {
 
     // exercicio 1
@@ -105,7 +108,7 @@ fun main() {
     //    • 15-17 juvenil
     //    • 18-25 adulto
 
-
+/*
     print("DIGITE SUA IDADE: ")
     val idade = readLine()!!.toInt()
 
@@ -119,6 +122,24 @@ fun main() {
         else -> println("idade invalida")
     }
 
+ */
+
+
+    //Exercicio 4
+    //Faça um programa em que permita a entrada de um número qualquer e
+    // exiba se este número é par ou ímpar. Se for par exiba também a raiz
+    // quadrada do mesmo; se for ímpar exiba o número elevado ao quadrado.
+
+
+    println("DIGITE UM NUMERO QUALQUER:  ")
+    val num = readLine()!!.toDouble()
+
+    if ((num % 2 == 0.0) && (num % 3 != 0.0)) {
+        println("O NUMERO DIGITADO FOI: $num " +
+                "E SUA RAIZ QUADRADA É:  ${sqrt(num)}")
+
+    } else
+        println("O NUMERO DIGITADO FOI: $num O NUMERO ELEVADO AO QUADRADO É: ${num.pow(2)}")
 
 }
  
